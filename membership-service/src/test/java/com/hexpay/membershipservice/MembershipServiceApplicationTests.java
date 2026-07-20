@@ -1,10 +1,10 @@
-package com.example.myhexpay;
+package com.hexpay.membershipservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MyHexPayApplicationTests {
+class MembershipServiceApplicationTests {
 
     @Test
     void contextLoads() {
