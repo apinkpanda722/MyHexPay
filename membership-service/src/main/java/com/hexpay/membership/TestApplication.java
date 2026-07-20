@@ -1,13 +1,13 @@
-package com.example.myhexpay;
+package com.hexpay.membership;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MyHexPayApplication {
+public class TestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MyHexPayApplication.class, args);
+        SpringApplication.run(TestApplication.class, args);
     }
 
 }
