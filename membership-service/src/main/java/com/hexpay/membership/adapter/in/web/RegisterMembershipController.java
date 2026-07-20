@@ -1,4 +1,4 @@
-package com.hexpay.membership;
+package com.hexpay.membership.adapter.in.web;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class TestController {
+public class RegisterMembershipController {
 
     @GetMapping(path = "/test")
     void test() {
