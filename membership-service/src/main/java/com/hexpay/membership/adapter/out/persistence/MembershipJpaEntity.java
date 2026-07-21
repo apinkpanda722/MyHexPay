@@ -1,11 +1,12 @@
 package com.hexpay.membership.adapter.out.persistence;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 @Entity
@@ -16,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class MembershipJpaEntity {
 
     @Id
-    @Generated
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long membershipId;
 
     private String name;
@@ -25,7 +26,7 @@ public class MembershipJpaEntity {
     private boolean isValid;
     private boolean isCorp;
 
-    public MembershipJpaEntity(String name, String address, String email, boolean isValid, boolean isCorp) {
+    public MembershipJpaEntity(String name, String email, String address, boolean isValid, boolean isCorp) {
         this.name = name;
         this.address = address;
         this.email = email;

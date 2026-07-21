@@ -6,9 +6,11 @@ import com.hexpay.membership.application.port.in.RegisterMembershipCommand;
 import com.hexpay.membership.application.port.in.RegisterMembershipUseCase;
 import com.hexpay.membership.application.port.out.RegisterMembershipPort;
 import com.hexpay.membership.domain.Membership;
+import common.UseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 
+@UseCase
 @RequiredArgsConstructor
 @Transactional
 public class RegisterMembershipService implements RegisterMembershipUseCase {
